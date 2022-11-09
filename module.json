@@ -1,47 +1,65 @@
 {
-  "name": "wfrp4e-night-of-blood",
+  "id": "wfrp4e-night-of-blood",
   "title": "Night of Blood (WFRP 4e)",
   "description": "The classic Warhammer Fantasy Roleplay adventure, perfect for introducing new players. Now updated to include multi-level scenes",
-  "version": "3.0",
-  "author": "Stuart Kerrigan",
-  "dependencies": [
-    {
-      "name": "lib-wrapper"
-    },
-    {
-      "name": "betterroofs"
-    },
-    {
-      "name": "wall-height"
-    },
-    {
-      "name": "levels"
-    },
-    {
-      "name": "token-attacher"
-    },
-    {
-      "name": "ambientdoors"
-    },
-    {
-      "name": "tokenmagic"
+  "version": "3.1",
+  "authors": [ {
+    "name": "Stuart Kerrigan",
+    "flags": {}
+  }
+],
+"relationships": {
+  "systems": [{
+    "id": "wfrp4e",
+    "type": "system",
+    "manifest": "https://raw.githubusercontent.com/moo-man/WFRP4e-FoundryVTT/master/system.json",
+    "compatibility": {
+      "verified": "6.1.4"
     }
-  ],
-  "esmodules": [],
+  }],
+  "requires": [
+    {
+      "id": "lib-wrapper",
+      "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/download/v1.12.10.0/module.json"
+    },
+    {
+      "id": "betterroofs",
+      "manifest": "https://github.com/theripper93/Better-Roofs/releases/download/1.7.6/module.json"
+    },
+    {
+      "id": "wall-height",
+      "manifest": "https://github.com/theripper93/wall-height/releases/download/4.8/module.json"
+    },
+    {
+      "id": "levels",
+      "manifest": "https://github.com/theripper93/Levels/releases/download/3.5.2/module.json"
+    },
+    {
+      "id": "token-attacher",
+      "manifest": "https://raw.githubusercontent.com/KayelGee/token-attacher/v4.5.11/module.json"
+    },
+    {
+      "id": "ambientdoors",
+      "manifest": "https://raw.githubusercontent.com/EndlesNights/ambientdoors/master/module.json"
+    },
+    {
+      "id": "tokenmagic",
+      "manifest": "https://raw.githubusercontent.com/Feu-Secret/Tokenmagic/master/tokenmagic/module.json"
+    }
+  ]
+},
   "scripts": [
     "init.js"
   ],
   "systems": [
     "wfrp4e"
   ],
-  "styles": [
-    "./styles.css"
-  ],
   "packs": [
     {
       "label": "Night of Blood Actors",
       "type": "Actor",
       "name": "NightOfBloodActors",
+      "system": "wfrp4e",
       "path": "./packs/night-of-blood-actors.db",
       "package": "wfrp4e-night-of-blood"
     },
@@ -57,6 +75,7 @@
       "name": "NightOfBloodJournal",
       "path": "./packs/night-of-blood-journal.db",
       "type": "JournalEntry",
+      "system": "wfrp4e",
       "package": "wfrp4e-night-of-blood"
     },
     {
@@ -70,11 +89,11 @@
   "flags": {
     "initializationPacks": ["wfrp4e-night-of-blood.NightOfBloodActors", "wfrp4e-night-of-blood.NightOfBloodScenes", "wfrp4e-night-of-blood.NightOfBloodJournal"]
   },
-  "languages": [
-    "en"
-  ],
-  "minimumCoreVersion": "0.9",
-  "manifest": "https://raw.githubusercontent.com/CStuartEKerrigan/WFRP-Night-of-Blood-4e-FVTT/master/module.json",
-  "download": "https://github.com/CStuartEKerrigan/WFRP-Night-of-Blood-4e-FVTT/archive/master.zip",
-  "url": "https://github.com/CStuartEKerrigan/WFRP-Night-of-Blood-4e-FVTT/"
+  "manifest": "https://raw.github.com/joshli-de/WFRP-Night-of-Blood-4e-FVTT/edit/master/module.json",
+  "download": "https://github.com/joshli-de/WFRP-Night-of-Blood-4e-FVTT/archive/master.zip",
+  "url": "https://github.com/joshli-de/WFRP-Night-of-Blood-4e-FVTT/",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  }
 }

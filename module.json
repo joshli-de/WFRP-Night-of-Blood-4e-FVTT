@@ -89,7 +89,7 @@
   "flags": {
     "initializationPacks": ["wfrp4e-night-of-blood.NightOfBloodActors", "wfrp4e-night-of-blood.NightOfBloodScenes", "wfrp4e-night-of-blood.NightOfBloodJournal"]
   },
-  "manifest": "https://raw.github.com/joshli-de/WFRP-Night-of-Blood-4e-FVTT/edit/master/module.json",
+  "manifest": "https://raw.githubusercontent.com/joshli-de/WFRP-Night-of-Blood-4e-FVTT/master/module.json",
   "download": "https://github.com/joshli-de/WFRP-Night-of-Blood-4e-FVTT/archive/master.zip",
   "url": "https://github.com/joshli-de/WFRP-Night-of-Blood-4e-FVTT/",
   "compatibility": {
